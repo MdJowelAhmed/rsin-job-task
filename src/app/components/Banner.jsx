@@ -8,9 +8,9 @@ const Banner = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left Section */}
         <div className="space-y-6 flex gap-4">
-          <div className="">
+          <div className="flex flex-col items-center justify-center ">
             {/* Saudi Bank Certified Card */}
-            <div className="bg-[#E4FFDF] rounded-2xl p-6 shadow-md relative w-[271px] h-[291px] mb-6">
+            <div className="bg-[#E4FFDF] rounded-2xl p-6 shadow-md relative w-[271px] h-[291px] mb-[30px]">
               <h4 className="text-gray-800 font-semibold text-sm mb-4 text-center">
                 Saudi Center Bank Certified
               </h4>
@@ -87,46 +87,62 @@ const Banner = () => {
             </div>
 
             {/* Trusted Investors Row */}
-            <div className="flex items-center space-x-2">
-              <div className="flex -space-x-2">
-                <img
-                  src="https://via.placeholder.com/32"
+            <div className="flex items-center space-x-2 bg-[#F3F7FB] p-2 rounded-xl shadow-lg">
+              <div className="flex -space-x-3">
+                <Image
+                  src="/Ellipse4.png"
                   alt="user1"
-                  className="w-8 h-8 rounded-full border-2 border-white"
+                  height={32}
+                  width={32}
+                  className=" rounded-full border-2 border-white"
                 />
-                <img
-                  src="https://via.placeholder.com/32"
-                  alt="user2"
-                  className="w-8 h-8 rounded-full border-2 border-white"
+                <Image
+                  src="/Ellipse3.png"
+                  alt="user1"
+                  height={32}
+                  width={32}
+                  className="rounded-full border-2 border-white"
                 />
-                <img
-                  src="https://via.placeholder.com/32"
-                  alt="user3"
-                  className="w-8 h-8 rounded-full border-2 border-white"
+                <Image
+                  src="/Ellipse2.png"
+                  alt="user1"
+                  height={32}
+                  width={32}
+                  className=" rounded-full border-2 border-white"
+                />
+                <Image
+                  src="/Ellipse1.png"
+                  alt="user1"
+                  height={32}
+                  width={32}
+                  className="rounded-full border-2 border-white"
                 />
               </div>
-              <span className="text-gray-600 text-sm">
-                Trusted by <b>15k+ investors</b>
+              <span className="text-gray-600 text-xs">
+                Trusted by 15k+ investors
               </span>
             </div>
           </div>
 
           <div>
-            <div>
+            <div className="mb-3">
               <Image
                 src="/Owner.png"
-                height={200}
-                width={200}
+                height={243}
+                width={266}
                 alt="owner pic"
               />
             </div>
             {/* Graph Section */}
-            <div className="bg-white rounded-2xl shadow p-4 w-80">
-              <h4 className="text-gray-500 text-sm mb-2">
-                Invest Financing (APR)
-              </h4>
-              <p className="text-2xl font-bold text-gray-900">11% - 13.5%</p>
-              <div className="flex items-end space-x-2 mt-4">
+            <div className="bg-white rounded-2xl shadow  w-[271px]">
+              <div className="text-center pt-6">
+                <h4 className="text-gray-500 text-sm mb-2 text-left pl-4">
+                  Invest Financing 
+                </h4>
+                <p>(APR)</p>
+                <p className="text-2xl font-bold text-gray-900">11% - 13.5%</p>
+              </div>
+              <div className="flex items-end  mt-4">
                 <div className="w-[66px] h-[126px] bg-[#78E9F4]"></div>
                 <div className="w-[66px] h-[176px] bg-[#82C4FB]"></div>
                 <div className="w-[66px] h-[106px] bg-[#82FBDE]"></div>
@@ -138,7 +154,7 @@ const Banner = () => {
 
         {/* Right Section */}
         <div className="space-y-4">
-          <div className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+          <div className="inline-block bg-[#00233F] text-[#19EB4B] text-xs  px-3 py-1 rounded-full">
             Islamic Finance, Shari’a Approved
           </div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
