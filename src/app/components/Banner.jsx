@@ -4,15 +4,15 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white dark:bg-gray-900">
       <section className="container max-w-[1536px] mx-auto px-4 py-10 lg:py-16">
         <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-32 items-center">
           {/* Left Section */}
           <div className="space-y-6 flex flex-col md:flex-row gap-4">
             <div className="flex flex-col items-center justify-center">
               {/* Saudi Bank Certified Card */}
-              <div className="bg-[#E4FFDF] rounded-2xl p-6 shadow-md relative w-full md:w-[271px] h-[291px] mb-[30px]">
-                <h4 className="text-gray-800 font-semibold text-sm mb-4 text-center">
+              <div className="bg-[#E4FFDF] dark:bg-[#1A3D24] rounded-2xl p-6 shadow-md relative w-full md:w-[271px] h-[291px] mb-[30px]">
+                <h4 className="text-gray-800 dark:text-gray-200 font-semibold text-sm mb-4 text-center">
                   Saudi Center Bank Certified
                 </h4>
 
@@ -43,7 +43,7 @@ const Banner = () => {
                     transformOrigin: "right center",
                   }}
                 >
-                  <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] shadow rounded-full">
+                  <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] dark:bg-[#2B4A35] shadow rounded-full">
                     Investors
                   </span>
                 </div>
@@ -54,7 +54,7 @@ const Banner = () => {
                     transformOrigin: "left center",
                   }}
                 >
-                  <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] shadow rounded-full">
+                  <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] dark:bg-[#2B4A35] shadow rounded-full">
                     Start Investing
                   </span>
                 </div>
@@ -65,7 +65,7 @@ const Banner = () => {
                     transformOrigin: "left center",
                   }}
                 >
-                  <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] shadow rounded-full">
+                  <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] dark:bg-[#2B4A35] shadow rounded-full">
                     Financing
                   </span>
                 </div>
@@ -76,7 +76,7 @@ const Banner = () => {
                     transformOrigin: "left center",
                   }}
                 >
-                  <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] shadow rounded-full">
+                  <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] dark:bg-[#2B4A35] shadow rounded-full">
                     Business
                   </span>
                 </div>
@@ -88,38 +88,38 @@ const Banner = () => {
               </div>
 
               {/* Trusted Investors Row */}
-              <div className="flex items-center space-x-2 bg-[#F3F7FB] p-2 rounded-xl shadow-lg">
+              <div className="flex items-center space-x-2 bg-[#F3F7FB] dark:bg-[#1E293B] p-2 rounded-xl shadow-lg">
                 <div className="flex -space-x-3">
                   <Image
                     src="/Ellipse4.png"
                     alt="user1"
                     height={32}
                     width={32}
-                    className="rounded-full border-2 border-white"
+                    className="rounded-full border-2 border-white dark:border-gray-800"
                   />
                   <Image
                     src="/Ellipse3.png"
                     alt="user2"
                     height={32}
                     width={32}
-                    className="rounded-full border-2 border-white"
+                    className="rounded-full border-2 border-white dark:border-gray-800"
                   />
                   <Image
                     src="/Ellipse2.png"
                     alt="user3"
                     height={32}
                     width={32}
-                    className="rounded-full border-2 border-white"
+                    className="rounded-full border-2 border-white dark:border-gray-800"
                   />
                   <Image
                     src="/Ellipse1.png"
                     alt="user4"
                     height={32}
                     width={32}
-                    className="rounded-full border-2 border-white"
+                    className="rounded-full border-2 border-white dark:border-gray-800"
                   />
                 </div>
-                <span className="text-gray-600 text-xs">
+                <span className="text-gray-600 dark:text-gray-400 text-xs">
                   Trusted by 15k+ investors
                 </span>
               </div>
@@ -136,13 +136,13 @@ const Banner = () => {
                 />
               </div>
               {/* Graph Section */}
-              <div className="bg-white rounded-2xl w-[271px]">
+              <div className="bg-white dark:bg-gray-800 rounded-2xl w-[271px]">
                 <div className="text-center pt-6">
-                  <h4 className="text-gray-500 text-sm mb-2 text-left pl-4">
+                  <h4 className="text-gray-500 dark:text-gray-400 text-sm mb-2 text-left pl-4">
                     Invest Financing
                   </h4>
                   <p>(APR)</p>
-                  <p className="text-2xl font-bold text-gray-900">
+                  <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">
                     11% - 13.5%
                   </p>
                 </div>
@@ -168,10 +168,10 @@ const Banner = () => {
               />
               Islamic Finance, Shari a Approved
             </div>
-            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 dark:text-gray-100 leading-tight">
               Smart Investments for Verified SMEs
             </h1>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base leading-relaxed">
               Smart Investments for Verified SMEs connects investors with vetted
               small businesses, promoting informed decisions and local economic
               growth.
@@ -180,17 +180,17 @@ const Banner = () => {
               <button className="bg-[#005397] text-white rounded-full px-6 py-2 text-sm font-semibold hover:bg-blue-700">
                 Start Investing
               </button>
-              <button className="border border-gray-400 rounded-full px-6 py-2 text-sm font-semibold hover:bg-gray-100">
+              <button className="border border-gray-400 dark:border-gray-600 rounded-full px-6 py-2 text-sm font-semibold hover:bg-gray-100 dark:hover:bg-gray-700">
                 Get Funded
               </button>
             </div>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
               See our 
-              <a href="#" className="font-semibold text-blue-600 underline">
+              <a href="#" className="font-semibold text-blue-600 dark:text-blue-400 underline">
                 2,000 reviews
               </a>
               on
-              <span className="text-green-600 font-semibold">⭐ Trustpilot</span>
+              <span className="text-green-600 dark:text-green-400 font-semibold">⭐ Trustpilot</span>
             </p>
           </div>
         </div>

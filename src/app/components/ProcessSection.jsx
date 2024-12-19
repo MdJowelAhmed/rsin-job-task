@@ -1,3 +1,6 @@
+// Updated ProcessSection Component with Dark and Light Mode Support
+// Adjusted text colors using Tailwind CSS's dark mode utility classes.
+
 import { FaAssistiveListeningSystems, FaHandHoldingUsd } from "react-icons/fa";
 import {
   MdAssignmentReturn,
@@ -56,13 +59,13 @@ const ProcessSection = () => {
   ];
 
   return (
-    <div className="w-full bg-gray-50">
-      <section className="container  py-12 px-4  max-w-[1536px] mx-auto">
+    <div className="w-full bg-gray-50 dark:bg-gray-800">
+      <section className="container py-12 px-4 max-w-[1536px] mx-auto">
         {/* Header */}
-        <div className="bg-white shadow-sm p-6 rounded-lg mb-6 ">
-          <div className="mb-6  text-center md:text-start">
-            <p className="text-green-600 font-semibold mb-2">How it Works</p>
-            <h2 className="text-2xl md:text-4xl font-bold max-w-[350px]">
+        <div className="bg-white dark:bg-gray-700 shadow-sm p-6 rounded-lg mb-6">
+          <div className="mb-6 text-center md:text-start">
+            <p className="text-green-600 dark:text-green-400 font-semibold mb-2">How it Works</p>
+            <h2 className="text-2xl md:text-4xl font-bold max-w-[350px] text-gray-900 dark:text-gray-100">
               Our Process for Investors and Businesses
             </h2>
           </div>
@@ -71,25 +74,27 @@ const ProcessSection = () => {
         {/* Process Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* For Investors */}
-          <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col">
-            <h3 className="text-lg font-bold mb-4 text-center md:text-start">For Investors</h3>
+          <div className="bg-white dark:bg-gray-700 rounded-lg shadow-sm p-6 flex flex-col">
+            <h3 className="text-lg font-bold mb-4 text-center md:text-start text-gray-900 dark:text-gray-100">
+              For Investors
+            </h3>
             <div className="flex justify-center mb-6">
-              <div className="shadow-md w-16 h-16 flex items-center justify-center rounded-full">
-                <span className="text-xl font-semibold">RSIN</span>
+              <div className="shadow-md w-16 h-16 flex items-center justify-center rounded-full bg-gray-50 dark:bg-gray-800">
+                <span className="text-xl font-semibold text-gray-900 dark:text-gray-100">RSIN</span>
               </div>
             </div>
             <div className="space-y-4">
               {investorData.map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center bg-gray-50 p-3 rounded-md"
+                  className="flex items-center bg-gray-50 dark:bg-gray-800 p-3 rounded-md"
                 >
-                  <div className="bg-[#ECFBF1] shadow-sm w-8 h-8 rounded-full flex items-center justify-center text-green-500 text-2xl mr-4">
+                  <div className="bg-[#ECFBF1] dark:bg-green-900 shadow-sm w-8 h-8 rounded-full flex items-center justify-center text-green-500 dark:text-green-300 text-2xl mr-4">
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold">{item.title}</h4>
-                    <p className="text-sm text-gray-500">{item.description}</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-gray-100">{item.title}</h4>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -98,32 +103,34 @@ const ProcessSection = () => {
               <button className="bg-[#005397] text-white px-6 py-2 rounded-3xl font-medium hover:bg-blue-700">
                 Start Investing
               </button>
-              <button className="flex items-center text-blue-600 border border-1 border-[#005397] px-4 rounded-3xl hover:text-blue-800">
+              <button className="flex items-center text-blue-600 dark:text-blue-400 border border-1 border-[#005397] px-4 rounded-3xl hover:text-blue-800 dark:hover:text-blue-300">
                 <span className="mr-2">▶</span> Tutorial
               </button>
             </div>
           </div>
 
           {/* For Businesses */}
-          <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col">
-            <h3 className="text-lg font-bold mb-4 text-center md:text-start">For Businesses</h3>
+          <div className="bg-white dark:bg-gray-700 rounded-lg shadow-sm p-6 flex flex-col">
+            <h3 className="text-lg font-bold mb-4 text-center md:text-start text-gray-900 dark:text-gray-100">
+              For Businesses
+            </h3>
             <div className="flex justify-center mb-6">
-              <div className="shadow-md w-16 h-16 flex items-center justify-center rounded-full">
-                <span className="text-xl font-semibold">RSIN</span>
+              <div className="shadow-md w-16 h-16 flex items-center justify-center rounded-full bg-gray-50 dark:bg-gray-800">
+                <span className="text-xl font-semibold text-gray-900 dark:text-gray-100">RSIN</span>
               </div>
             </div>
             <div className="space-y-4">
               {businessData.map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center bg-gray-50 p-3 rounded-md"
+                  className="flex items-center bg-gray-50 dark:bg-gray-800 p-3 rounded-md"
                 >
-                  <div className="bg-[#ECFBF1] shadow-sm text-2xl w-8 h-8 rounded-full flex items-center justify-center text-green-500 mr-4">
+                  <div className="bg-[#ECFBF1] dark:bg-green-900 shadow-sm text-2xl w-8 h-8 rounded-full flex items-center justify-center text-green-500 dark:text-green-300 mr-4">
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold">{item.title}</h4>
-                    <p className="text-sm text-gray-500">{item.description}</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-gray-100">{item.title}</h4>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -132,7 +139,7 @@ const ProcessSection = () => {
               <button className="bg-[#005397] text-white px-6 py-2 rounded-3xl font-medium hover:bg-blue-700">
                 Get Funding
               </button>
-              <button className="flex items-center text-blue-600 border border-1 border-[#005397] px-4 rounded-3xl hover:text-blue-800">
+              <button className="flex items-center text-blue-600 dark:text-blue-400 border border-1 border-[#005397] px-4 rounded-3xl hover:text-blue-800 dark:hover:text-blue-300">
                 <span className="mr-2">▶</span> Tutorial
               </button>
             </div>

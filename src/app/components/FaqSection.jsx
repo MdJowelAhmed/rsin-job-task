@@ -153,16 +153,14 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="w-full bg-gray-50">
-      <section className=" max-w-[1536px] container mx-auto py-12 px-4 bg-gray-50">
-        <div className=" ">
-          {/* Header */}
-          <h3 className="text-center text-green-600 font-semibold mb-4">FAQ</h3>
-          <h2 className="text-center text-3xl font-bold mb-10">
+    <div className="w-full bg-gray-50 dark:bg-gray-800">
+      <section className="max-w-[1536px] container mx-auto py-12 px-4">
+        <div>
+          <h3 className="text-center text-green-600 font-semibold mb-4 dark:text-green-400">FAQ</h3>
+          <h2 className="text-center text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">
             Frequently Asked Questions
           </h2>
 
-          {/* Tabs */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             {tabs.map((tab) => (
               <button
@@ -170,7 +168,7 @@ const FAQSection = () => {
                 className={`px-4 py-2 rounded-full font-medium ${
                   activeTab === tab
                     ? "bg-[#005397] text-white"
-                    : "bg-white text-blue-500 border border-blue-500"
+                    : "bg-white text-blue-500 border border-blue-500 dark:bg-gray-700 dark:text-blue-400 dark:border-gray-600"
                 } transition-colors`}
                 onClick={() => setActiveTab(tab)}
               >
@@ -179,12 +177,11 @@ const FAQSection = () => {
             ))}
           </div>
 
-          {/* FAQ Section */}
-          <div className="   rounded-lg ">
+          <div>
             {faqData[activeTab]?.map((faq, index) => (
-              <div key={index} className="  py-4">
+              <div key={index} className="py-4">
                 <button
-                  className="flex justify-between items-center w-full text-left text-lg font-medium"
+                  className="flex justify-between items-center w-full text-left text-lg font-medium text-gray-900 dark:text-gray-100"
                   onClick={() =>
                     setExpandedQuestion(
                       expandedQuestion === index ? null : index
@@ -193,13 +190,13 @@ const FAQSection = () => {
                 >
                   {faq.question}
                   {expandedQuestion === index ? (
-                    <FaChevronUp className="text-blue-500" />
+                    <FaChevronUp className="text-blue-500 dark:text-blue-300" />
                   ) : (
-                    <FaChevronDown className="text-gray-500" />
+                    <FaChevronDown className="text-gray-500 dark:text-gray-300" />
                   )}
                 </button>
                 {expandedQuestion === index && (
-                  <p className="mt-4 text-gray-600">{faq.answer}</p>
+                  <p className="mt-4 text-gray-600 dark:text-gray-300">{faq.answer}</p>
                 )}
               </div>
             ))}
