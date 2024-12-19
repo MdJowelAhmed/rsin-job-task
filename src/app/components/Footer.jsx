@@ -18,7 +18,9 @@ const Footer = () => {
       <div className="container mx-auto py-10 px-6 md:flex md:justify-between ">
         {/* Logo and Disclaimer */}
         <div className=" mb-8 md:mb-0">
-          <h2 className="text-2xl font-bold text-blue-600 mb-8">RSIN</h2>
+          <h1 className="text-3xl font-bold text-[#005397]">
+            RS<span className="text-[#36B0BE]">I</span>N
+          </h1>
           <p className="mt-4 text-sm w-80">
             <span className="font-medium">Disclaimer:</span> Due to the periodic
             changes of information / requirement / document, RSIN does not
@@ -32,7 +34,7 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        <div className="md:w-2/3 flex justify-between lg:ml-16">
+        <div className="md:w-2/3 flex justify-between lg:ml-16 text-sm">
           <div>
             <h3 className="font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
@@ -124,7 +126,7 @@ const Footer = () => {
         <div className="container mx-auto px-6 md:flex md:justify-between md:items-center">
           {/* Contact Info */}
           <div className="flex flex-col md:flex-row md:space-x-12">
-            <div className="mb-4 md:mb-0">
+            <div className="mb-4 md:mb-0 space-y-3">
               <h3 className="font-semibold mb-2">Contact Us</h3>
               <p className="flex items-center space-x-2">
                 <AiOutlineMail /> <span>contactus@rsin.com</span>
@@ -196,7 +198,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center mt-20">
+        <div className="flex justify-between items-center mt-16">
           <div className="text-center mt-6">
             Copyright © RSIN@2024. All rights reserved. V-0.114
           </div>

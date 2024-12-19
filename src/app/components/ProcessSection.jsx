@@ -59,8 +59,8 @@ const ProcessSection = () => {
     <div className="w-full bg-gray-50">
       <section className="container  py-12 px-4  max-w-[1536px] mx-auto">
         {/* Header */}
-        <div className="bg-white shadow-sm p-6 rounded-lg mb-6">
-          <div className="mb-6  ">
+        <div className="bg-white shadow-sm p-6 rounded-lg mb-6 ">
+          <div className="mb-6  text-center md:text-start">
             <p className="text-green-600 font-semibold mb-2">How it Works</p>
             <h2 className="text-2xl md:text-4xl font-bold max-w-[350px]">
               Our Process for Investors and Businesses
@@ -72,7 +72,7 @@ const ProcessSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* For Investors */}
           <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col">
-            <h3 className="text-lg font-bold mb-4">For Investors</h3>
+            <h3 className="text-lg font-bold mb-4 text-center md:text-start">For Investors</h3>
             <div className="flex justify-center mb-6">
               <div className="shadow-md w-16 h-16 flex items-center justify-center rounded-full">
                 <span className="text-xl font-semibold">RSIN</span>
@@ -106,7 +106,7 @@ const ProcessSection = () => {
 
           {/* For Businesses */}
           <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col">
-            <h3 className="text-lg font-bold mb-4">For Businesses</h3>
+            <h3 className="text-lg font-bold mb-4 text-center md:text-start">For Businesses</h3>
             <div className="flex justify-center mb-6">
               <div className="shadow-md w-16 h-16 flex items-center justify-center rounded-full">
                 <span className="text-xl font-semibold">RSIN</span>

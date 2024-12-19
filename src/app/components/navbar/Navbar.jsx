@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white z-50 relative">
       <div className="container max-w-[1536px] mx-auto shadow-sm">
         <div className="flex justify-between items-center h-16 px-4 md:px-8">
           {/* Logo */}
@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Menu (Mobile) */}
-          <div onClick={handleNav} className="md:hidden z-10 cursor-pointer">
+          <div onClick={handleNav} className="md:hidden z-50 cursor-pointer">
             {!nav ? (
               <AiOutlineMenu size={25} className="text-blue-600" />
             ) : (
@@ -51,7 +51,7 @@ const Navbar = () => {
 
         {/* Mobile Nav Links */}
         <ul
-          className={`absolute top-16 left-0 w-full bg-white text-gray-600 md:hidden ${
+          className={`absolute top-16 left-0 w-full bg-white text-gray-600 md:hidden z-50 ${
             nav ? "block" : "hidden"
           }`}
         >
@@ -67,7 +67,7 @@ const Navbar = () => {
           </li>
           <li className="py-4 px-6 hover:bg-gray-100 cursor-pointer">Others</li>
           <li className="py-4 px-6 hover:bg-gray-100 cursor-pointer">Log In</li>
-          <li className="py-2 px-6 bg-[#005397] text-white  rounded-3xl">
+          <li className="py-2 px-6 bg-[#005397] text-white rounded-3xl">
             Apply Now
           </li>
         </ul>

@@ -70,21 +70,25 @@ const Testimonials = () => {
               </h2>
             </div>
 
-            <div className="flex gap-1 text-gray-50">
-              <p className="text-gray-50">
-                See our <span className="text-white">2,000 reviews</span> on
-              </p>
-              <FaStar className="text-yellow-400" />
-              <p>Trustpilot</p>
+            <div className="hidden md:block">
+              <div className="flex gap-1 text-gray-50 ">
+                <p className="text-gray-50">
+                  See our <span className="text-white">2,000 reviews</span> on
+                </p>
+                <FaStar className="text-yellow-400" />
+                <p>Trustpilot</p>
+              </div>
             </div>
           </div>
 
           {/* Slider Navigation Arrows */}
-          <div className="absolute top-36 right-32 -translate-y-1/2 z-10 bg-white w-16 h-16 flex items-center justify-center rounded-md">
-            <button className="swiper-button-prev text-blue-500 hover:text-blue-700"></button>
-          </div>
-          <div className="absolute top-36 right-12 -translate-y-1/2 z-10 bg-white w-16 h-16 flex items-center justify-center rounded-md">
-            <button className="swiper-button-next text-blue-500 hover:text-blue-700"></button>
+          <div className="hidden md:block">
+            <div className="absolute top-36 right-32 -translate-y-1/2 z-10 bg-white w-16 h-16 flex items-center justify-center rounded-md">
+              <button className="swiper-button-prev text-blue-500 hover:text-blue-700"></button>
+            </div>
+            <div className="absolute top-36 right-12 -translate-y-1/2 z-10 bg-white w-16 h-16 flex items-center justify-center rounded-md">
+              <button className="swiper-button-next text-blue-500 hover:text-blue-700"></button>
+            </div>
           </div>
 
           {/* Swiper Slider */}
@@ -97,6 +101,7 @@ const Testimonials = () => {
               prevEl: ".swiper-button-prev",
             }}
             breakpoints={{
+              450: { slidesPerView: 2 },
               640: { slidesPerView: 3 },
               1024: { slidesPerView: 5 },
             }}

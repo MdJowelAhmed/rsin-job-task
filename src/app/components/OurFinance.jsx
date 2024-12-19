@@ -7,8 +7,8 @@ const OurFinance = () => {
       <section className="max-w-[1536px] container mx-auto   text-gray-800 px-4  pb-24">
         <div className=" flex flex-col md:flex-row justify-between items-center">
           {/* Left Side - Images */}
-          <div className="relative bg-gray-100 p-4 flex justify-center items-center gap-6 rounded-xl">
-            <div className="absolute bg-green-200 w-40 h-40 lg:w-48 lg:h-48 rounded-md top-20 left-16 -z-10"></div>
+          <div className="relative bg-gray-100 p-4 flex flex-col md:flex-row justify-center items-center gap-6 rounded-xl">
+            <div className="absolute bg-green-200 w-40 h-40 lg:w-48 lg:h-48 rounded-md md:top-20 md:left-16 -z-10"></div>
             <Image
               src="/finance/Rectangle 1770.png"
               alt="Finance Chart"
@@ -23,7 +23,7 @@ const OurFinance = () => {
               width={365}
               className=" rounded-md shadow-lg mt-28"
             />
-            <div className="h-60 w-60 bg-[#26FC0326] absolute -bottom-16 left-48"></div>
+            <div className="h-60 w-60 hidden md:block bg-[#26FC0326] absolute -bottom-16 left-48"></div>
           </div>
 
           {/* Right Side - Content */}

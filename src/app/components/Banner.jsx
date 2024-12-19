@@ -6,18 +6,18 @@ const Banner = () => {
   return (
     <div className="w-full bg-white">
       <section className="container max-w-[1536px] mx-auto px-4 py-10 lg:py-16">
-        <div className=" flex flex-col md:flex-row justify-between gap-32 items-center">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-32 items-center">
           {/* Left Section */}
-          <div className="space-y-6 flex gap-4">
-            <div className="flex flex-col items-center justify-center ">
+          <div className="space-y-6 flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col items-center justify-center">
               {/* Saudi Bank Certified Card */}
-              <div className="bg-[#E4FFDF] rounded-2xl p-6 shadow-md relative w-[271px] h-[291px] mb-[30px]">
+              <div className="bg-[#E4FFDF] rounded-2xl p-6 shadow-md relative w-full md:w-[271px] h-[291px] mb-[30px]">
                 <h4 className="text-gray-800 font-semibold text-sm mb-4 text-center">
                   Saudi Center Bank Certified
                 </h4>
 
                 {/* Circular Center Logo */}
-                <div className="absolute top-14 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full  flex items-center justify-center">
+                <div className="absolute top-14 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full flex items-center justify-center">
                   <Image
                     src="/Logo_Saudi.png"
                     alt="Center Logo"
@@ -26,7 +26,7 @@ const Banner = () => {
                   />
                 </div>
 
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full  flex items-center justify-center">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full flex items-center justify-center">
                   <Image
                     src="/Logo_Saudi.png"
                     alt="Center Logo"
@@ -95,25 +95,25 @@ const Banner = () => {
                     alt="user1"
                     height={32}
                     width={32}
-                    className=" rounded-full border-2 border-white"
+                    className="rounded-full border-2 border-white"
                   />
                   <Image
                     src="/Ellipse3.png"
-                    alt="user1"
+                    alt="user2"
                     height={32}
                     width={32}
                     className="rounded-full border-2 border-white"
                   />
                   <Image
                     src="/Ellipse2.png"
-                    alt="user1"
+                    alt="user3"
                     height={32}
                     width={32}
-                    className=" rounded-full border-2 border-white"
+                    className="rounded-full border-2 border-white"
                   />
                   <Image
                     src="/Ellipse1.png"
-                    alt="user1"
+                    alt="user4"
                     height={32}
                     width={32}
                     className="rounded-full border-2 border-white"
@@ -125,17 +125,18 @@ const Banner = () => {
               </div>
             </div>
 
-            <div>
+            <div className="w-full md:w-[266px]">
               <div className="mb-3">
                 <Image
                   src="/Owner.png"
                   height={243}
                   width={266}
                   alt="owner pic"
+                  className="w-full md:w-[266px] object-cover"
                 />
               </div>
               {/* Graph Section */}
-              <div className="bg-white rounded-2xl   w-[271px]">
+              <div className="bg-white rounded-2xl w-[271px]">
                 <div className="text-center pt-6">
                   <h4 className="text-gray-500 text-sm mb-2 text-left pl-4">
                     Invest Financing
@@ -145,7 +146,7 @@ const Banner = () => {
                     11% - 13.5%
                   </p>
                 </div>
-                <div className="flex items-end  mt-4">
+                <div className="flex items-end mt-4">
                   <div className="w-[66px] h-[126px] bg-[#78E9F4]"></div>
                   <div className="w-[66px] h-[176px] bg-[#82C4FB]"></div>
                   <div className="w-[66px] h-[106px] bg-[#82FBDE]"></div>
@@ -156,8 +157,8 @@ const Banner = () => {
           </div>
 
           {/* Right Section */}
-          <div className="space-y-4">
-            <div className="flex gap-2 max-w-[260px] items-center bg-[#00233F] text-[#19EB4B] text-xs   px-3 py-1 rounded-full">
+          <div className="space-y-4 max-w-full lg:max-w-lg">
+            <div className="flex gap-2 items-center bg-[#00233F] text-[#19EB4B] text-xs px-3 py-1 rounded-full">
               <Image
                 src="/Logo_Saudi.png"
                 alt="Center Logo"
@@ -170,7 +171,7 @@ const Banner = () => {
             <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
               Smart Investments for Verified SMEs
             </h1>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-md">
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
               Smart Investments for Verified SMEs connects investors with vetted
               small businesses, promoting informed decisions and local economic
               growth.
@@ -184,14 +185,12 @@ const Banner = () => {
               </button>
             </div>
             <p className="text-gray-600 text-sm">
-              See our{" "}
+              See our 
               <a href="#" className="font-semibold text-blue-600 underline">
                 2,000 reviews
-              </a>{" "}
-              on{" "}
-              <span className="text-green-600 font-semibold">
-                ⭐ Trustpilot
-              </span>
+              </a>
+              on
+              <span className="text-green-600 font-semibold">⭐ Trustpilot</span>
             </p>
           </div>
         </div>

@@ -5,7 +5,7 @@ const AboutUsSection = () => {
   return (
     <div className="w-full bg-gray-50">
       <section className="container max-w-[1536px] mx-auto  text-gray-700 px-4 ">
-        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20">
+        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center md:mt-20">
           {/* Left Content */}
           <div className="bg-white py-32 px-6 rounded-lg">
             <h4 className="text-green-600 font-medium text-lg mb-2">

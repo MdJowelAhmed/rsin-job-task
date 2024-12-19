@@ -18,7 +18,7 @@ const ImageSection = () => {
           </div>
 
           {/* Stats Card 1 */}
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-72 md:h-[290px] justify-between">
             <p className="text-gray-500 text-sm">
               New investors <br /> last month
             </p>
@@ -37,7 +37,7 @@ const ImageSection = () => {
           </div>
 
           {/* Stats Card 2 */}
-          <div className="bg-[#7CE4A1] rounded-lg shadow-md p-6 flex flex-col justify-between">
+          <div className="bg-[#7CE4A1] rounded-lg shadow-md p-6 h-72 md:h-[290px] flex flex-col justify-between">
             <p className="text-gray-500 text-sm">
               Unique investments <br /> last month
             </p>
@@ -45,7 +45,7 @@ const ImageSection = () => {
           </div>
 
           {/* Stats Card 3 */}
-          <div className="bg-[#7CE4A1] rounded-lg shadow-md p-6 flex flex-col justify-between">
+          <div className="bg-[#7CE4A1] rounded-lg shadow-md p-6 h-72 md:h-[290px] flex flex-col justify-between">
             <p className="text-gray-500 text-sm">
               Total invested <br /> last month
             </p>
@@ -64,7 +64,7 @@ const ImageSection = () => {
           </div>
 
           {/* Stats Card 4 */}
-          <div className="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+          <div className="bg-white rounded-lg shadow-md p-6 h-72 md:h-[290px] flex flex-col justify-between">
             <p className="text-gray-500 text-sm">
               Site visitors <br /> last month
             </p>
