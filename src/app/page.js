@@ -4,6 +4,8 @@ import Banner from "./components/Banner";
 import NewsLogoSlider from "./components/NewsLogoSlider";
 import AboutUsSection from "./components/AboutUs";
 import OurFinance from "./components/OurFinance";
+import Testimonials from "./components/Testimonials";
+import ProcessSection from "./components/ProcessSection";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
     <NewsLogoSlider />
     <AboutUsSection />
     <OurFinance />
+    <Testimonials />
+    <ProcessSection />
    </div>
   );
 }
