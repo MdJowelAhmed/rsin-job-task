@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-300">
+    <footer className="bg-white text-gray-700 dark:bg-gray-900 dark:text-gray-300">
       {/* Top Section */}
       <div className="container mx-auto py-10 px-6 md:flex md:justify-between ">
         {/* Logo and Disclaimer */}
@@ -120,7 +120,7 @@ const Footer = () => {
       <hr />
 
       {/* Bottom Section */}
-      <div className="bg-gray-200 dark:bg-gray-800 py-6 text-sm">
+      <div className="bg-white dark:bg-gray-800 py-6 text-sm">
         <div className="container mx-auto px-6 md:flex md:justify-between md:items-center">
           {/* Contact Info */}
           <div className="flex flex-col md:flex-row md:space-x-12">

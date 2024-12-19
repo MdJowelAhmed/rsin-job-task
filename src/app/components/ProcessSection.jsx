@@ -50,10 +50,10 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-12 px-4 md:px-8 lg:px-16">
+    <section className="container bg-gray-100 py-12 px-4 md:px-8 lg:px-16 max-w-[1536px] mx-auto">
       {/* Header */}
-      <div className="bg-white shadow-lg p-6 rounded-lg mb-10">
-      <div className="mb-12  ">
+      <div className="bg-white shadow-lg p-6 rounded-lg mb-6">
+      <div className="mb-6  ">
         <p className="text-green-600 font-semibold mb-2">How it Works</p>
         <h2 className="text-2xl md:text-4xl font-bold max-w-[350px]">
           Our Process for Investors and Businesses

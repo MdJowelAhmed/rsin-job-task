@@ -10,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full shadow-md">
+    <div className="container max-w-[1536px] mx-auto shadow-sm">
       <div className="flex justify-between items-center h-16 px-4 md:px-8">
         {/* Logo */}
-        <h1 className="text-3xl font-bold text-blue-600">RSIN</h1>
+        <h1 className="text-3xl font-bold text-[#005397]">RS<span className="text-[#36B0BE]">I</span>N</h1>
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex space-x-8 text-gray-600">
@@ -25,9 +25,9 @@ const Navbar = () => {
         </ul>
 
         {/* Login & Apply Button */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-8">
           <button className="text-gray-600">Log In</button>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          <button className="bg-[#005397] text-white px-4 py-2 rounded-3xl hover:bg-blue-700">
             Apply Now
           </button>
         </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
         </li>
         <li className="py-4 px-6 hover:bg-gray-100 cursor-pointer">Others</li>
         <li className="py-4 px-6 hover:bg-gray-100 cursor-pointer">Log In</li>
-        <li className="py-4 px-6 text-blue-600 font-bold">Apply Now</li>
+        <li className="py-2 px-6 bg-[#005397] text-white  rounded-3xl">Apply Now</li>
       </ul>
     </div>
   );

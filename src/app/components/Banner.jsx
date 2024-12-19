@@ -18,7 +18,7 @@ const Banner = () => {
               {/* Circular Center Logo */}
               <div className="absolute top-14 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full  flex items-center justify-center">
                 <Image
-                  src="/Logo_Saudi.png" /* Replace with your logo */
+                  src="/Logo_Saudi.png"
                   alt="Center Logo"
                   height={55}
                   width={55}
@@ -27,7 +27,7 @@ const Banner = () => {
 
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full  flex items-center justify-center">
                 <Image
-                  src="/Logo_Saudi.png" /* Replace with your logo */
+                  src="/Logo_Saudi.png"
                   alt="Center Logo"
                   height={22}
                   width={22}
@@ -38,8 +38,8 @@ const Banner = () => {
               <div
                 className="absolute top-36 left-10"
                 style={{
-                  transform: "rotate(20deg)", // Slight tilt (adjust the degree as needed)
-                  transformOrigin: "right center", // Rotate around the left edge
+                  transform: "rotate(20deg)",
+                  transformOrigin: "right center",
                 }}
               >
                 <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] shadow rounded-full">
@@ -49,8 +49,8 @@ const Banner = () => {
               <div
                 className="absolute top-36 right-6"
                 style={{
-                  transform: "rotate(-20deg)", // Slight tilt (adjust the degree as needed)
-                  transformOrigin: "left center", // Rotate around the left edge
+                  transform: "rotate(-20deg)",
+                  transformOrigin: "left center",
                 }}
               >
                 <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] shadow rounded-full">
@@ -60,8 +60,8 @@ const Banner = () => {
               <div
                 className="absolute bottom-16 left-8"
                 style={{
-                  transform: "rotate(-20deg)", // Slight tilt (adjust the degree as needed)
-                  transformOrigin: "left center", // Rotate around the left edge
+                  transform: "rotate(-20deg)",
+                  transformOrigin: "left center",
                 }}
               >
                 <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] shadow rounded-full">
@@ -71,8 +71,8 @@ const Banner = () => {
               <div
                 className="absolute bottom-20 right-10"
                 style={{
-                  transform: "rotate(20deg)", // Slight tilt (adjust the degree as needed)
-                  transformOrigin: "left center", // Rotate around the left edge
+                  transform: "rotate(20deg)",
+                  transformOrigin: "left center",
                 }}
               >
                 <span className="px-3 py-1 text-xs font-medium bg-[#F1FFEE52] shadow rounded-full">
@@ -134,10 +134,10 @@ const Banner = () => {
               />
             </div>
             {/* Graph Section */}
-            <div className="bg-white rounded-2xl shadow  w-[271px]">
+            <div className="bg-white rounded-2xl   w-[271px]">
               <div className="text-center pt-6">
                 <h4 className="text-gray-500 text-sm mb-2 text-left pl-4">
-                  Invest Financing 
+                  Invest Financing
                 </h4>
                 <p>(APR)</p>
                 <p className="text-2xl font-bold text-gray-900">11% - 13.5%</p>
@@ -154,8 +154,15 @@ const Banner = () => {
 
         {/* Right Section */}
         <div className="space-y-4">
-          <div className="inline-block bg-[#00233F] text-[#19EB4B] text-xs  px-3 py-1 rounded-full">
-            Islamic Finance, Shari’a Approved
+          <div className="flex gap-2 max-w-72 items-center bg-[#00233F] text-[#19EB4B] text-xs   px-3 py-1 rounded-full">
+            <Image
+              src="/Logo_Saudi.png"
+              alt="Center Logo"
+              height={22}
+              width={22}
+              className="bg-white rounded-full"
+            />
+            Islamic Finance, Shari a Approved
           </div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Smart Investments for Verified SMEs

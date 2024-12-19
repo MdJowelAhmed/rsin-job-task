@@ -125,11 +125,6 @@ const FAQSection=()=> {
     ],
   };
   
-  console.log(faqData);
-  
-  
-  console.log(faqData);
-  
 
   return (
     <section className="py-12 px-6 bg-gray-50">
