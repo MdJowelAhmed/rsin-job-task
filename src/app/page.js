@@ -7,6 +7,7 @@ import OurFinance from "./components/OurFinance";
 import Testimonials from "./components/Testimonials";
 import ProcessSection from "./components/ProcessSection";
 import ImageSection from "./components/ImageSection";
+import FAQSection from "./components/FaqSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
     <Testimonials />
     <ProcessSection />
     <ImageSection />
+    <FAQSection />
    </div>
   );
 }
