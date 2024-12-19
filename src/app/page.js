@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import ProcessSection from "./components/ProcessSection";
 import ImageSection from "./components/ImageSection";
 import FAQSection from "./components/FaqSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
     <ProcessSection />
     <ImageSection />
     <FAQSection />
+    <Footer />
    </div>
   );
 }
