@@ -9,102 +9,104 @@ import Image from "next/image";
 
 const NewsLogoSlider = () => {
   return (
-    <div className="w-full py-8 bg-white">
-      {/* Title */}
-      <div className="flex items-center mb-6">
-        <span className="text-gray-600 text-sm font-medium mr-2">
-          Feature in Trusted by
-        </span>
-        <span className="text-gray-400">→</span>
-      </div>
+    <div className="w-full bg-white">
+      <div className="max-w-[1536px] mx-auto container py-8 ">
+        {/* Title */}
+        <div className="flex gap-2 items-center mb-6">
+          <span className="text-gray-600 text-sm font-medium md:ml-10 ">
+            Feature in Trusted by
+          </span>
+          <span className="text-gray-400 ">→</span>
+        </div>
 
-      {/* Swiper Slider */}
-      <Swiper
-        slidesPerView={2}
-        spaceBetween={20}
-        autoplay={{ delay: 2000 }}
-        breakpoints={{
-          640: { slidesPerView: 3 },
-          768: { slidesPerView: 4 },
-          1024: { slidesPerView: 6 },
-        }}
-        modules={[Autoplay]}
-        loop={true}
-      >
-        {/* Slides */}
-        <SwiperSlide>
-          <Image
-            src="/newsLogo/Vector (1).png"
-            alt="Al Jazeera"
-            height={30}
-            width={30}
-            className="h-12 mx-auto"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-          src="/newsLogo/Group 2 (1).png"
-            alt="Asharq"
-            height={30}
-            width={30}
-            className="h-12 mx-auto"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-        <Image
-          src="/newsLogo/Vector (1).png"
-            alt="Asharq"
-            height={30}
-            width={30}
-            className="h-12 mx-auto"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-        <Image
-          src="/newsLogo/Vector (4).png"
-            alt="Asharq"
-            height={30}
-            width={30}
-            className="h-12 mx-auto"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-        <Image
-          src="/newsLogo/Vector (5).png"
-            alt="Asharq"
-            height={30}
-            width={30}
-            className="h-12 mx-auto"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-        <Image
-          src="/newsLogo/Vector (1).png"
-            alt="Asharq"
-            height={30}
-            width={30}
-            className="h-12 mx-auto"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-        <Image
-          src="/newsLogo/Vector (2).png"
-            alt="Asharq"
-            height={30}
-            width={30}
-            className="h-12 mx-auto"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-        <Image
-          src="/newsLogo/Vector (2).png"
-            alt="Asharq"
-            height={30}
-            width={30}
-            className="h-12 mx-auto"
-          />
-        </SwiperSlide>
-      </Swiper>
+        {/* Swiper Slider */}
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={20}
+          autoplay={{ delay: 2000 }}
+          breakpoints={{
+            640: { slidesPerView: 3 },
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 6 },
+          }}
+          modules={[Autoplay]}
+          loop={true}
+        >
+          {/* Slides */}
+          <SwiperSlide>
+            <Image
+              src="/newsLogo/Vector (1).png"
+              alt="Al Jazeera"
+              height={30}
+              width={30}
+              className="h-12 mx-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/newsLogo/Group 2 (1).png"
+              alt="Asharq"
+              height={30}
+              width={30}
+              className="h-12 mx-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/newsLogo/Vector (1).png"
+              alt="Asharq"
+              height={30}
+              width={30}
+              className="h-12 mx-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/newsLogo/Vector (4).png"
+              alt="Asharq"
+              height={30}
+              width={30}
+              className="h-12 mx-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/newsLogo/Vector (5).png"
+              alt="Asharq"
+              height={30}
+              width={30}
+              className="h-12 mx-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/newsLogo/Vector (1).png"
+              alt="Asharq"
+              height={30}
+              width={30}
+              className="h-12 mx-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/newsLogo/Vector (2).png"
+              alt="Asharq"
+              height={30}
+              width={30}
+              className="h-12 mx-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/newsLogo/Vector (2).png"
+              alt="Asharq"
+              height={30}
+              width={30}
+              className="h-12 mx-auto"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 };
